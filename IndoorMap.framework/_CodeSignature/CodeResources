@@ -4,41 +4,37 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		3y++sUAKzaCQmjLBz2v0kvESHgc=
-		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		o6Jr+OhcLnMVs3dUJtOD0kCNhaU=
+		CQ+EkimDUawUYvbzRQHipQ/3nU8=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/Info.plist</key>
 		<data>
-		SuQhpYSKkUqOXMVAFclplKERB60=
+		rBQV13/1TdeVClAkenMGZL68b10=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/ONm-fq-EQq-view-AGD-Cn-9b9.nib</key>
 		<data>
-		DjkeFq4TATo5a2JWFrlyQ3+uIBA=
+		ycmjcNQLTIwNwv2gHU5vAbjXGfk=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWFloorSelectionViewController.nib</key>
 		<data>
-		dC/nX3+pkFVnCED6zgmgXpRdTLI=
+		6gAb5hfyYg5NcZ7SRBzFcB0ZFpc=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWMapViewController.nib</key>
 		<data>
-		oXnJSPQ3F1aBBjEoXqnfcqd+IrI=
+		Exl6BfgtSFJYCH/eiIaCu1MKn04=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWStoreListViewController.nib</key>
 		<data>
-		6lqja5h8KaDvcRFogfOuxq5GNQo=
+		/rD0JxpekYFq8JZ638VwuCvcsQQ=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/UINavigationController-FFc-Lj-m0j.nib</key>
 		<data>
-		Bg0oG9n4kZSWEL1xmxObOA/4ewk=
+		W1wNcqkC0JjHkShppkZSTuqUAo4=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/iaV-bF-OSg-view-her-ga-23E.nib</key>
 		<data>
-		7eALQvtXa0aP+VwQaGOKabyMkkA=
+		82yxJQqt/j3gT/ozToSVbIt1RHA=
 		</data>
 		<key>Headers/IndoorMap-Swift.h</key>
 		<data>
@@ -50,55 +46,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		J7VH3LftsQhMX4QeA5nY1GyLxy8=
+		KIYyxESVE6PFObsZ8+jmxQpjJDw=
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		ETpaHBJGr+2B2wFQnUzWzxzBQCA=
+		7TQCuvNJKUUXQfpcqDI1wgTR/eU=
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		ETpaHBJGr+2B2wFQnUzWzxzBQCA=
-		</data>
-		<key>Modules/IndoorMap.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
-		<data>
-		6FieJ9ULVTd+lGU7CKkQHBunc3E=
-		</data>
-		<key>Modules/IndoorMap.swiftmodule/Project/x86_64.swiftsourceinfo</key>
-		<data>
-		6FieJ9ULVTd+lGU7CKkQHBunc3E=
+		7TQCuvNJKUUXQfpcqDI1wgTR/eU=
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		S/de8XO2Hvz6G/FXLvfEBM9ebRI=
+		NzIknD509EOnIJkBW3KazKxSaRY=
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		QcbZARh9HNzdb6ZzV+Xw1J3bhyg=
+		gbR4/F9+v6kwM/OpgLZUxm9xb2c=
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		S/de8XO2Hvz6G/FXLvfEBM9ebRI=
+		NzIknD509EOnIJkBW3KazKxSaRY=
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		QcbZARh9HNzdb6ZzV+Xw1J3bhyg=
-		</data>
-		<key>Modules/IndoorMap.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<data>
-		TV5iLvlWueNC1oS20lF4qSSWuFE=
-		</data>
-		<key>Modules/IndoorMap.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		L96bn7MIAiQC6Ly71Psv9LPf0sY=
-		</data>
-		<key>Modules/IndoorMap.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		TV5iLvlWueNC1oS20lF4qSSWuFE=
-		</data>
-		<key>Modules/IndoorMap.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		L96bn7MIAiQC6Ly71Psv9LPf0sY=
+		gbR4/F9+v6kwM/OpgLZUxm9xb2c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,7 +78,7 @@
 		</data>
 		<key>SPWStoreTableViewCell.nib</key>
 		<data>
-		glGYvMjpXK1WkHgjohlNvOvnTpQ=
+		lZTGV1Q2ciQplVk0C/B2HYkb99E=
 		</data>
 		<key>department_store.json</key>
 		<data>
@@ -127,56 +99,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RKdcKYEzecv4XXDOGej0pQNqYK87elyrS+z0BSSGOD0=
+			4nXcAsUmbFd9RYspATDk/hbWhSK+FyoQRrwcP/DuWjU=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aQu/eO454RJba3ig4TFcBLWD3UQjunKiP844e55D4s8=
+			kwA7sho24jo5EcpvWUNt7tgvpBp45VHSOZI1w38q5GY=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/ONm-fq-EQq-view-AGD-Cn-9b9.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C/+eYP6Jf44+7iO6jPr2a0FNbwq5Dw+GF9sLdT02RiQ=
+			EjIZAhjZdPYPmOFCzCr9ZYaBvMbnyVV2bmP3qpSmH7Y=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWFloorSelectionViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E/MNaikiNc0Wk+Kr+OiWzx1a+ICsT+XSLuIai/mhoUc=
+			GHlr+DQwmUpCe1WUmilcX4fvV3rAHjyxszIA288r2Jc=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWMapViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6qDZqiFVl4gk1rIlo9djVaxvoEQI0uNfjHFV+8u8HF8=
+			F11jA1DzV/Bx0ghJfbwCVFjo5hU4xXY7H1XJ9qPGrYA=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWStoreListViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rWJv556uPC2L5ZEA4AiTZhmHa23B8GuH2u0Qggw2kJ0=
+			gD0zK/prt04rYDUmknpQFHxDjA0W6XlZF66Ix0cuaxY=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/UINavigationController-FFc-Lj-m0j.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yC6P+EwkhCYT4PjVonfYV0UI+IV4IONhrK0xsaB4VG4=
+			ay14qDn8CDxnSjohMIs8d0HYpIV3EPTlvGwqoGzyJrs=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/iaV-bF-OSg-view-her-ga-23E.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x1XmlpIEQCrSVPX60Y7o1EjwXAiX2tC8FN64oyWBabk=
+			wm+JA5nX8LP5ZyLjAb18XCzcJQOI5N5b3pb3FXip1oE=
 			</data>
 		</dict>
 		<key>Headers/IndoorMap-Swift.h</key>
@@ -197,84 +169,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GuOEjHVzfJ9EtrwlG+jNxDxeqdOKDGvbmqLCU+iXRoo=
+			/9ccCyGK6GgwDf8eA1WX8cztWZ8OIIWHHgFMETy/66k=
 			</data>
 		</dict>
 		<key>Modules/IndoorMap.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GuOEjHVzfJ9EtrwlG+jNxDxeqdOKDGvbmqLCU+iXRoo=
-			</data>
-		</dict>
-		<key>Modules/IndoorMap.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5TzpMRilgn+4WqZpehT+mUQMzGSwmF3+ZkCJmIWg3h4=
-			</data>
-		</dict>
-		<key>Modules/IndoorMap.swiftmodule/Project/x86_64.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5TzpMRilgn+4WqZpehT+mUQMzGSwmF3+ZkCJmIWg3h4=
+			/9ccCyGK6GgwDf8eA1WX8cztWZ8OIIWHHgFMETy/66k=
 			</data>
 		</dict>
 		<key>Modules/IndoorMap.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CQIUVaPFrhzBOTXXoGVlG0T1+qygEK8oXzJUD4G5994=
+			WaWPiI0xrBAaUjknzQ8y4pRS6yk1KTrs+tgYzAqkyNA=
 			</data>
 		</dict>
 		<key>Modules/IndoorMap.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6MfpBqJ+QUOr6Gr5/CHxr8r5iakJ3hWfpOrmXZgg6+w=
+			LU2QIktArJpHM2wAGF3dTlifJpTXudEI0zAElrw2ZtY=
 			</data>
 		</dict>
 		<key>Modules/IndoorMap.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CQIUVaPFrhzBOTXXoGVlG0T1+qygEK8oXzJUD4G5994=
+			WaWPiI0xrBAaUjknzQ8y4pRS6yk1KTrs+tgYzAqkyNA=
 			</data>
 		</dict>
 		<key>Modules/IndoorMap.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6MfpBqJ+QUOr6Gr5/CHxr8r5iakJ3hWfpOrmXZgg6+w=
-			</data>
-		</dict>
-		<key>Modules/IndoorMap.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hueFIIMmZ5/dsvIGQKPqveHcN/HhxhhwFas6L09+C/8=
-			</data>
-		</dict>
-		<key>Modules/IndoorMap.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			63u6Ix1x+K2Wefidi3tWOGZYwWoWDkpsNJJr2M0fdxQ=
-			</data>
-		</dict>
-		<key>Modules/IndoorMap.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hueFIIMmZ5/dsvIGQKPqveHcN/HhxhhwFas6L09+C/8=
-			</data>
-		</dict>
-		<key>Modules/IndoorMap.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			63u6Ix1x+K2Wefidi3tWOGZYwWoWDkpsNJJr2M0fdxQ=
+			LU2QIktArJpHM2wAGF3dTlifJpTXudEI0zAElrw2ZtY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -288,7 +218,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/zc72a18m3Mg4efgvVJ51JxyQ/P+K1nNXW8kKAbmvRs=
+			HrMJabLg+g39IHDb5RULCBdDLTTTqup4JzVsocjACpc=
 			</data>
 		</dict>
 		<key>department_store.json</key>
