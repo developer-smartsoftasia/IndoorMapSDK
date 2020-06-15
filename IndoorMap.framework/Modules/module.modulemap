@@ -1,0 +1,11 @@
+framework module IndoorMap {
+  umbrella header "IndoorMap.h"
+
+  export *
+  module * { export * }
+}
+
+module IndoorMap.Swift {
+    header "IndoorMap-Swift.h"
+    requires objc
+}
