@@ -1,0 +1,155 @@
+{
+    "siam-center": {
+     "id": 4382,
+     "user_uuid": "1a8e7ba4-7fe9-4ba1-9504-a7626049849b",
+     "name": "Siam Center",
+     "floors": [
+       {
+         "building_id": 4382,
+         "id": 8212,
+         "project_id": 4382,
+         "level": 0
+       },
+       {
+         "building_id": 4382,
+         "id": 8213,
+         "project_id": 4382,
+         "level": 1
+       },
+       {
+         "building_id": 4382,
+         "id": 8214,
+         "project_id": 4382,
+         "level": 2
+       },
+       {
+         "building_id": 4382,
+         "id": 8215,
+         "project_id": 4382,
+         "level": 3
+       }
+     ]
+   },
+   "siam-discovery":{
+     "id": 4377,
+     "user_uuid": "1a8e7ba4-7fe9-4ba1-9504-a7626049849b",
+     "name": "Siam Discovery",
+     "floors": [
+       {
+         "building_id": 4377,
+         "id": 8199,
+         "project_id": 4377,
+         "level": -1
+       },
+       {
+         "building_id": 4377,
+         "id": 8200,
+         "project_id": 4377,
+         "level": 0
+       },
+       {
+         "building_id": 4377,
+         "id": 8201,
+         "project_id": 4377,
+         "level": 1
+       },
+       {
+         "building_id": 4377,
+         "id": 8202,
+         "project_id": 4377,
+         "level": 2
+       },
+       {
+         "building_id": 4377,
+         "id": 8203,
+         "project_id": 4377,
+         "level": 3
+       },
+       {
+         "building_id": 4377,
+         "id": 8204,
+         "project_id": 4377,
+         "level": 4
+       },
+       {
+         "building_id": 4377,
+         "id": 8205,
+         "project_id": 4377,
+         "level": 5
+       },
+       {
+         "building_id": 4377,
+         "id": 8206,
+         "project_id": 4377,
+         "level": 6
+       },
+       {
+         "building_id": 4377,
+         "id": 8207,
+         "project_id": 4377,
+         "level": 7
+       }
+     ]
+   },
+   "siam-paragon":{
+     "id": 4409,
+     "user_uuid": "1a8e7ba4-7fe9-4ba1-9504-a7626049849b",
+     "name": "Siam Paragon",
+     "floors": [
+       {
+         "building_id": 4409,
+         "id": 8287,
+         "project_id": 4409,
+         "level": -1
+       },
+       {
+         "building_id": 4409,
+         "id": 8288,
+         "project_id": 4409,
+         "level": 0
+       },
+       {
+         "building_id": 4409,
+         "id": 8290,
+         "project_id": 4409,
+         "level": 1
+       },
+       {
+         "building_id": 4409,
+         "id": 8291,
+         "project_id": 4409,
+         "level": 2
+       },
+       {
+         "building_id": 4409,
+         "id": 8292,
+         "project_id": 4409,
+         "level": 3
+       },
+       {
+         "building_id": 4409,
+         "id": 8293,
+         "project_id": 4409,
+         "level": 4
+       },
+       {
+         "building_id": 4409,
+         "id": 8295,
+         "project_id": 4409,
+         "level": 5
+       },
+       {
+         "building_id": 4409,
+         "id": 8296,
+         "project_id": 4409,
+         "level": 6
+       },
+       {
+         "building_id": 4409,
+         "id": 12068,
+         "project_id": 4409,
+         "level": 7
+       }
+     ]
+   }
+}
