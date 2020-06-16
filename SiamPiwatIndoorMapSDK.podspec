@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = "SiamPiwatIndoorMapSDK"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "SiamPiwatIndoorMapSDK"
   s.homepage     = "https://github.com/developer-smartsoftasia/IndoorMapSDK.git"
   s.license      = "Siam Piwat Company Limited"
   s.author       = "Siam Piwat Company Limited"
-  s.ios.deployment_target = "12.0"
+  s.ios.deployment_target = "10.0"
   s.swift_version = "5.0"
   s.source       = { :git => "https://github.com/developer-smartsoftasia/IndoorMapSDK.git", :tag => "#{s.version}" }
   s.ios.vendored_frameworks  = "IndoorMap.framework", "Mappedin.framework"
