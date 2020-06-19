@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SiamPiwatIndoorMapSDK"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "SiamPiwatIndoorMapSDK"
   s.homepage     = "https://github.com/developer-smartsoftasia/IndoorMapSDK.git"
   s.license      = "Siam Piwat Company Limited"
@@ -14,6 +14,5 @@ Pod::Spec.new do |s|
   s.dependency "RxDataSources", "4.0.1"
   s.dependency "RxGesture", "3.0.2"
   s.dependency "Action", "4.0.0"
-  s.dependency "AlamofireImage", "~> 4.1"
   s.dependency "MBProgressHUD", "1.2.0"
 end
