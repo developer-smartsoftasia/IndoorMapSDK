@@ -10,55 +10,55 @@
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib</key>
 		<data>
-		WaCgrMX4MvEqN9lF7VJOw5NvEdQ=
+		waQnyujCTqtHNGt1OGTfvRaKR4M=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib</key>
 		<data>
-		dv00BaGDhUDZywO/5d6tMOJUHTw=
+		H3o3rvBvpHI0K+8WHES+0/nsB5Y=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/Info.plist</key>
 		<data>
-		6Q64cS/rPFYHWI9LWnw72ddoEXk=
+		OvCvl1gs1RZ1L3YAbFgJUyz/5Jc=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/ONm-fq-EQq-view-AGD-Cn-9b9.nib/objects-11.0+.nib</key>
 		<data>
-		TRBzVWt2MjLphJj1rVpv2cnK+d0=
+		8B8SdX5oKOYzwd234P0jBZ6Vzjk=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/ONm-fq-EQq-view-AGD-Cn-9b9.nib/runtime.nib</key>
 		<data>
-		NNRlZFWqQVURBzZZIfH1jABsNTw=
+		GQLqqk9lwq00xcWqJhSBpIi/pSw=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWFloorSelectionViewController.nib/objects-11.0+.nib</key>
 		<data>
-		5nccoXczc/PUlVe8HOhJrENzayY=
+		SCUtaKAFFtHyzTQZiN08v3dhbSE=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWFloorSelectionViewController.nib/runtime.nib</key>
 		<data>
-		1T2ptif7gf9KVunIvFT7aWtQzV4=
+		mW4X/x2hQHzOOm+VFONiZZUiqXo=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWMapViewController.nib/objects-11.0+.nib</key>
 		<data>
-		V/SilzuTRrjO4sSnVl1YtAA6A5w=
+		ZuRWLzdDo9hxDvbpGQFuAZE/Nc0=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWMapViewController.nib/runtime.nib</key>
 		<data>
-		JKp/akXTFwHODYVx5Voq7+PvmHI=
+		Cf9rejagV5jPauFbWsqzOH0PdmI=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWStoreListViewController.nib/objects-11.0+.nib</key>
 		<data>
-		oXdxSkqA1PxXDJPiw3Ek9r0Vgrw=
+		QNiuMZ8DlrVlYzTFI/WAOERGcvE=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWStoreListViewController.nib/runtime.nib</key>
 		<data>
-		YnhYmPtG1n/z+G0B+P7YL84FxI0=
+		U60657eYlehslCUmJgdXCAmLfzw=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/iaV-bF-OSg-view-her-ga-23E.nib/objects-11.0+.nib</key>
 		<data>
-		n50qsyFoNfHaJ7PdWz5w2ZLtC7U=
+		SMSCsYumysFTHuOzMcW/bdj8cUM=
 		</data>
 		<key>Base.lproj/IndoorMain.storyboardc/iaV-bF-OSg-view-her-ga-23E.nib/runtime.nib</key>
 		<data>
-		FpVP/x22jFH3M1sW0iFFjKBnz3k=
+		hxSzzysT5CPus4EQ8VzjkqkQxlg=
 		</data>
 		<key>Headers/IndoorMap-Swift.h</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/arm.swiftmodule</key>
 		<data>
-		yfR1F9t81MueLgfDfZ0869Lrrm4=
+		9uNERaSi/6EjTqWEDM5YVDJrfD8=
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		9VxHSQDgR2vGxeEkqgysFxBMoIs=
+		+kys1L6K2X2dGfuoyDqjR4ifabw=
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		9VxHSQDgR2vGxeEkqgysFxBMoIs=
+		+kys1L6K2X2dGfuoyDqjR4ifabw=
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		yfR1F9t81MueLgfDfZ0869Lrrm4=
+		9uNERaSi/6EjTqWEDM5YVDJrfD8=
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		yfR1F9t81MueLgfDfZ0869Lrrm4=
+		9uNERaSi/6EjTqWEDM5YVDJrfD8=
 		</data>
 		<key>Modules/IndoorMap.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>SPWStoreTableViewCell.nib</key>
 		<data>
-		g5VIkSzd2JCYWGCTtsc6UfYmL0E=
+		JoqkTVuh0Qbo0MGJD61ndxD96Y8=
 		</data>
 		<key>department_store.json</key>
 		<data>
@@ -199,143 +199,143 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WaCgrMX4MvEqN9lF7VJOw5NvEdQ=
+			waQnyujCTqtHNGt1OGTfvRaKR4M=
 			</data>
 			<key>hash2</key>
 			<data>
-			aK6qNs+DyhVS/mhl/6A0sbsJzYriSz15+pC4/+XABeg=
+			ou6D6r81izOaQKxHCF+2IPm9IzxbvnO7JWS6KE0TaFA=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dv00BaGDhUDZywO/5d6tMOJUHTw=
+			H3o3rvBvpHI0K+8WHES+0/nsB5Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			jRKZpBQStE1G0dP+fOGEG8Ks3OLOAt51UXcUNXhdF3M=
+			iMrUSf6HC/6aFHgv4p/fegjsBHQl8Bk9/XDlPDj82F8=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6Q64cS/rPFYHWI9LWnw72ddoEXk=
+			OvCvl1gs1RZ1L3YAbFgJUyz/5Jc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zo0zC6exw1VcKPzvsEor7qXvqZfhqmeNy81me5QOnG4=
+			46LHYCPIvaNH4GusbwvIf/p9Dhf/Se4h95FbnMYTDkg=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/ONm-fq-EQq-view-AGD-Cn-9b9.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TRBzVWt2MjLphJj1rVpv2cnK+d0=
+			8B8SdX5oKOYzwd234P0jBZ6Vzjk=
 			</data>
 			<key>hash2</key>
 			<data>
-			N5QxWns/mHaCculq8Knz0vIKnQ84ucNzi2WsFjPB10Q=
+			o6tZzNKmepjwNO6bHcxpTIi58q4/cl+DvwJo+E1+zww=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/ONm-fq-EQq-view-AGD-Cn-9b9.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NNRlZFWqQVURBzZZIfH1jABsNTw=
+			GQLqqk9lwq00xcWqJhSBpIi/pSw=
 			</data>
 			<key>hash2</key>
 			<data>
-			v3OY2ju8yP/BmoYYgsC2PnIdKSX5tbxfSgnVMEg/7Zk=
+			enHaRNK57xszFnt8/KoBTlvE0vZCg7V4F8NnaKRj0Og=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWFloorSelectionViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5nccoXczc/PUlVe8HOhJrENzayY=
+			SCUtaKAFFtHyzTQZiN08v3dhbSE=
 			</data>
 			<key>hash2</key>
 			<data>
-			DUdboWRbMPTAH0sbnGjTVLAVOXcXffkuuxqgCUuB+VE=
+			pz+wwom3sYL2rWROw6NhVaxcQmJVNNuYBox8LFuiLiM=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWFloorSelectionViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1T2ptif7gf9KVunIvFT7aWtQzV4=
+			mW4X/x2hQHzOOm+VFONiZZUiqXo=
 			</data>
 			<key>hash2</key>
 			<data>
-			4FNSLe4BRiC+c2XhLre1I73l0poQ9QKjBACRESdvn5Q=
+			XjyhMs3MBrG7ICDWhBrTUQh+jA8CFv0Rxvgiekf8v0A=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWMapViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V/SilzuTRrjO4sSnVl1YtAA6A5w=
+			ZuRWLzdDo9hxDvbpGQFuAZE/Nc0=
 			</data>
 			<key>hash2</key>
 			<data>
-			UB+0r2qCKPbxBTsK7sRYA8UI+37MPZUAzizdDCCJX2A=
+			Ex6Z/rkpCd0dLqExGBnvVd8OytvzZUDh9tm/Byu4lpA=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWMapViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JKp/akXTFwHODYVx5Voq7+PvmHI=
+			Cf9rejagV5jPauFbWsqzOH0PdmI=
 			</data>
 			<key>hash2</key>
 			<data>
-			xShawPwyWLNOe34VsfHDSP5v6twUy1sR1jRXSJm+NPc=
+			UET9JUgRroeWOdS1ee7xoAFmdq5AtlS4ofMFMg+0ol8=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWStoreListViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oXdxSkqA1PxXDJPiw3Ek9r0Vgrw=
+			QNiuMZ8DlrVlYzTFI/WAOERGcvE=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Pv1JpkQsjI6Be6bMAVJ3/p1st7wOHvrzRCogvn38JE=
+			LgQAFn0vJdYCo22wgVK/HNned95bQq3zB6X7VqZ4PMc=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/SPWStoreListViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YnhYmPtG1n/z+G0B+P7YL84FxI0=
+			U60657eYlehslCUmJgdXCAmLfzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			tIcELQPBPQYAOMMZrKhNPcZSsA6/tiuZ4HNOwk+Tex4=
+			hgkjaE3uMRPIdeFRJ6WiTZDuHw5QQTj2FNXE3CO48Zk=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/iaV-bF-OSg-view-her-ga-23E.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n50qsyFoNfHaJ7PdWz5w2ZLtC7U=
+			SMSCsYumysFTHuOzMcW/bdj8cUM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q4S5x52m834FJ1NoUzs+CkQvWu69VOtzHjmPHAVnxnI=
+			KMUoLVaid6we/XirhNXcjzDiL6vEj5qUWqprbfFRh18=
 			</data>
 		</dict>
 		<key>Base.lproj/IndoorMain.storyboardc/iaV-bF-OSg-view-her-ga-23E.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FpVP/x22jFH3M1sW0iFFjKBnz3k=
+			hxSzzysT5CPus4EQ8VzjkqkQxlg=
 			</data>
 			<key>hash2</key>
 			<data>
-			LHoPIp3gE+yyydq3jY7rMyGxY/bvjZ+rSntxZjWEpIk=
+			VkEwzohD7kOOK6KJNBjDyV/EOdp6aB3Wippuuf5C8OQ=
 			</data>
 		</dict>
 		<key>Headers/IndoorMap-Swift.h</key>
@@ -474,11 +474,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yfR1F9t81MueLgfDfZ0869Lrrm4=
+			9uNERaSi/6EjTqWEDM5YVDJrfD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			rvDTKxwoOhbD57MwNImDx3dRb8IfUQ5M3vM+zsKaNPA=
+			OdyKjq3u/ZRbmBy+eTno3GyoHTjjvv+Qt+MQKcdQpjk=
 			</data>
 		</dict>
 		<key>Modules/IndoorMap.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -496,11 +496,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9VxHSQDgR2vGxeEkqgysFxBMoIs=
+			+kys1L6K2X2dGfuoyDqjR4ifabw=
 			</data>
 			<key>hash2</key>
 			<data>
-			wV5hARQwsEGYmd58Sx6BP4agcYD2mihbgBWvrECib6U=
+			niVoLPhy6rBgsecawNn9PnhSt3/1uzWDcOVqimtwOLA=
 			</data>
 		</dict>
 		<key>Modules/IndoorMap.swiftmodule/arm64.swiftdoc</key>
@@ -518,11 +518,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9VxHSQDgR2vGxeEkqgysFxBMoIs=
+			+kys1L6K2X2dGfuoyDqjR4ifabw=
 			</data>
 			<key>hash2</key>
 			<data>
-			wV5hARQwsEGYmd58Sx6BP4agcYD2mihbgBWvrECib6U=
+			niVoLPhy6rBgsecawNn9PnhSt3/1uzWDcOVqimtwOLA=
 			</data>
 		</dict>
 		<key>Modules/IndoorMap.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -540,11 +540,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yfR1F9t81MueLgfDfZ0869Lrrm4=
+			9uNERaSi/6EjTqWEDM5YVDJrfD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			rvDTKxwoOhbD57MwNImDx3dRb8IfUQ5M3vM+zsKaNPA=
+			OdyKjq3u/ZRbmBy+eTno3GyoHTjjvv+Qt+MQKcdQpjk=
 			</data>
 		</dict>
 		<key>Modules/IndoorMap.swiftmodule/armv7.swiftdoc</key>
@@ -562,11 +562,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yfR1F9t81MueLgfDfZ0869Lrrm4=
+			9uNERaSi/6EjTqWEDM5YVDJrfD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			rvDTKxwoOhbD57MwNImDx3dRb8IfUQ5M3vM+zsKaNPA=
+			OdyKjq3u/ZRbmBy+eTno3GyoHTjjvv+Qt+MQKcdQpjk=
 			</data>
 		</dict>
 		<key>Modules/IndoorMap.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -672,11 +672,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g5VIkSzd2JCYWGCTtsc6UfYmL0E=
+			JoqkTVuh0Qbo0MGJD61ndxD96Y8=
 			</data>
 			<key>hash2</key>
 			<data>
-			pDUO3MJz8GmkdHX0F2j0diwRuLQRQOjfbxqpbRqoA4c=
+			doog0P1JEr03rfZKXCq5br5yBzLDwizLArnp+9d4eJ8=
 			</data>
 		</dict>
 		<key>department_store.json</key>
