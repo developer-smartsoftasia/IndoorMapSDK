@@ -297,6 +297,8 @@ SWIFT_CLASS("_TtC9IndoorMap10ShadowView")
 
 
 
+
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -593,6 +595,8 @@ SWIFT_CLASS("_TtC9IndoorMap10ShadowView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 
