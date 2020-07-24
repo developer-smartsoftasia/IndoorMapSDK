@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.dependency "RxGesture", "3.0.2"
   s.dependency "Action", "4.0.0"
   s.dependency "MBProgressHUD", "1.2.0"
+  s.dependency "Device", "3.2.1'"
   s.user_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
   s.pod_target_xcconfig = {
     'ENABLE_BITCODE' => 'NO'
