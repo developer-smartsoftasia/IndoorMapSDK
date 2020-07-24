@@ -222,6 +222,24 @@ SWIFT_CLASS("_TtC9IndoorMap11AppDelegate")
 
 @class NSCoder;
 
+SWIFT_CLASS("_TtC9IndoorMap22SPWDepartmentPopupView")
+@interface SPWDepartmentPopupView : UIView
+- (void)awakeFromNib;
+- (void)didMoveToSuperview;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9IndoorMap17SPWFloorPopupView")
+@interface SPWFloorPopupView : UIView
+- (void)awakeFromNib;
+- (void)didMoveToSuperview;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9IndoorMap31SPWFloorSelectionViewController")
 @interface SPWFloorSelectionViewController : UIViewController
 - (void)viewDidLoad;
@@ -229,26 +247,18 @@ SWIFT_CLASS("_TtC9IndoorMap31SPWFloorSelectionViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSLayoutConstraint;
-@class UIButton;
 
 SWIFT_CLASS("_TtC9IndoorMap20SPWMapViewController")
 @interface SPWMapViewController : UIViewController
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified buttonBottomtConstraint;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified navigateButton;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified currentLocationButton;
 - (void)viewDidLoad;
+- (IBAction)didTapFloorButton:(id _Nonnull)sender;
+- (IBAction)didTapNavigationButton:(id _Nonnull)sender;
+- (IBAction)didTapExitButton:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-
-@class UITextField;
-
-@interface SPWMapViewController (SWIFT_EXTENSION(IndoorMap)) <UITextFieldDelegate>
-- (BOOL)textFieldShouldBeginEditing:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 
@@ -291,6 +301,8 @@ SWIFT_CLASS("_TtC9IndoorMap10ShadowView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 
@@ -528,6 +540,24 @@ SWIFT_CLASS("_TtC9IndoorMap11AppDelegate")
 
 @class NSCoder;
 
+SWIFT_CLASS("_TtC9IndoorMap22SPWDepartmentPopupView")
+@interface SPWDepartmentPopupView : UIView
+- (void)awakeFromNib;
+- (void)didMoveToSuperview;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9IndoorMap17SPWFloorPopupView")
+@interface SPWFloorPopupView : UIView
+- (void)awakeFromNib;
+- (void)didMoveToSuperview;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9IndoorMap31SPWFloorSelectionViewController")
 @interface SPWFloorSelectionViewController : UIViewController
 - (void)viewDidLoad;
@@ -535,26 +565,18 @@ SWIFT_CLASS("_TtC9IndoorMap31SPWFloorSelectionViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSLayoutConstraint;
-@class UIButton;
 
 SWIFT_CLASS("_TtC9IndoorMap20SPWMapViewController")
 @interface SPWMapViewController : UIViewController
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified buttonBottomtConstraint;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified navigateButton;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified currentLocationButton;
 - (void)viewDidLoad;
+- (IBAction)didTapFloorButton:(id _Nonnull)sender;
+- (IBAction)didTapNavigationButton:(id _Nonnull)sender;
+- (IBAction)didTapExitButton:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-
-@class UITextField;
-
-@interface SPWMapViewController (SWIFT_EXTENSION(IndoorMap)) <UITextFieldDelegate>
-- (BOOL)textFieldShouldBeginEditing:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 
@@ -597,6 +619,8 @@ SWIFT_CLASS("_TtC9IndoorMap10ShadowView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 
