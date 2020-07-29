@@ -240,14 +240,6 @@ SWIFT_CLASS("_TtC9IndoorMap17SPWFloorPopupView")
 @end
 
 
-SWIFT_CLASS("_TtC9IndoorMap31SPWFloorSelectionViewController")
-@interface SPWFloorSelectionViewController : UIViewController
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC9IndoorMap20SPWMapViewController")
 @interface SPWMapViewController : UIViewController
 - (void)viewDidLoad;
@@ -261,16 +253,6 @@ SWIFT_CLASS("_TtC9IndoorMap20SPWMapViewController")
 
 
 
-
-@class UITableView;
-
-SWIFT_CLASS("_TtC9IndoorMap26SPWStoreListViewController")
-@interface SPWStoreListViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
 
 @class UILabel;
 @class UIImageView;
@@ -303,6 +285,11 @@ SWIFT_CLASS("_TtC9IndoorMap10ShadowView")
 @end
 
 
+
+
+@interface UIImageView (SWIFT_EXTENSION(IndoorMap))
+- (void)awakeFromNib;
+@end
 
 
 
@@ -558,14 +545,6 @@ SWIFT_CLASS("_TtC9IndoorMap17SPWFloorPopupView")
 @end
 
 
-SWIFT_CLASS("_TtC9IndoorMap31SPWFloorSelectionViewController")
-@interface SPWFloorSelectionViewController : UIViewController
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC9IndoorMap20SPWMapViewController")
 @interface SPWMapViewController : UIViewController
 - (void)viewDidLoad;
@@ -579,16 +558,6 @@ SWIFT_CLASS("_TtC9IndoorMap20SPWMapViewController")
 
 
 
-
-@class UITableView;
-
-SWIFT_CLASS("_TtC9IndoorMap26SPWStoreListViewController")
-@interface SPWStoreListViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
 
 @class UILabel;
 @class UIImageView;
@@ -621,6 +590,11 @@ SWIFT_CLASS("_TtC9IndoorMap10ShadowView")
 @end
 
 
+
+
+@interface UIImageView (SWIFT_EXTENSION(IndoorMap))
+- (void)awakeFromNib;
+@end
 
 
 
