@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SiamPiwatIndoorMapSDK"
-  s.version      = "0.0.24"
+  s.version      = "0.2.0"
   s.summary      = "SiamPiwatIndoorMapSDK"
   s.homepage     = "https://github.com/developer-smartsoftasia/IndoorMapSDK.git"
   s.license      = "Siam Piwat Company Limited"
@@ -16,6 +16,8 @@ Pod::Spec.new do |s|
   s.dependency "Action", "4.0.0"
   s.dependency "MBProgressHUD", "1.2.0"
   s.dependency "Device", "3.2.1"
+  s.dependency "Toast-Swift", "5.0.1"
+  s.dependency "Kingfisher", "5.14.1"
   s.user_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
   s.pod_target_xcconfig = {
     'ENABLE_BITCODE' => 'NO'
