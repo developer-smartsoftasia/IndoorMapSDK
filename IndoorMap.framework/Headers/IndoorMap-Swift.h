@@ -285,6 +285,11 @@ SWIFT_CLASS("_TtC9IndoorMap10ShadowView")
 @end
 
 
+@interface UIButton (SWIFT_EXTENSION(IndoorMap))
+- (void)awakeFromNib;
+@end
+
+
 
 
 @interface UIImageView (SWIFT_EXTENSION(IndoorMap))
@@ -587,6 +592,11 @@ SWIFT_CLASS("_TtC9IndoorMap10ShadowView")
 - (void)drawRect:(CGRect)rect;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIButton (SWIFT_EXTENSION(IndoorMap))
+- (void)awakeFromNib;
 @end
 
 
