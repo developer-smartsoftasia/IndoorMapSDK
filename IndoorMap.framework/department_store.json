@@ -151,5 +151,60 @@
          "level": 7
        }
      ]
-   }
+   },
+   "siam-icon": {
+      "id": 4461,
+      "user_uuid": "1a8e7ba4-7fe9-4ba1-9504-a7626049849b",
+      "name": "ICONSIAM",
+      "floors": [
+        {
+          "building_id": 4461,
+          "id": 8417,
+          "project_id": 4461,
+          "level": 0
+        },
+        {
+          "building_id": 4461,
+          "id": 8418,
+          "project_id": 4461,
+          "level": 1
+        },
+        {
+          "building_id": 4461,
+          "id": 8419,
+          "project_id": 4461,
+          "level": 2
+        },
+        {
+          "building_id": 4461,
+          "id": 8420,
+          "project_id": 4461,
+          "level": 3
+        },
+        {
+          "building_id": 4461,
+          "id": 8421,
+          "project_id": 4461,
+          "level": 4
+        },
+        {
+          "building_id": 4461,
+          "id": 8422,
+          "project_id": 4461,
+          "level": 5
+        },
+        {
+          "building_id": 4461,
+          "id": 8423,
+          "project_id": 4461,
+          "level": 6
+        },
+        {
+          "building_id": 4461,
+          "id": 8424,
+          "project_id": 4461,
+          "level": 7
+        }
+      ]
+    }
 }
