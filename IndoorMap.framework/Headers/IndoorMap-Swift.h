@@ -242,6 +242,7 @@ SWIFT_CLASS("_TtC9IndoorMap17SPWFloorPopupView")
 
 SWIFT_CLASS("_TtC9IndoorMap20SPWMapViewController")
 @interface SPWMapViewController : UIViewController
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (IBAction)didTapFloorButton:(id _Nonnull)sender;
 - (IBAction)didTapNavigationButton:(id _Nonnull)sender;
@@ -552,6 +553,7 @@ SWIFT_CLASS("_TtC9IndoorMap17SPWFloorPopupView")
 
 SWIFT_CLASS("_TtC9IndoorMap20SPWMapViewController")
 @interface SPWMapViewController : UIViewController
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (IBAction)didTapFloorButton:(id _Nonnull)sender;
 - (IBAction)didTapNavigationButton:(id _Nonnull)sender;
