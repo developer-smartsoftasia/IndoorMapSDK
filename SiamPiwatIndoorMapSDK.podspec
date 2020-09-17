@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/developer-smartsoftasia/IndoorMapSDK.git"
   s.license      = "Siam Piwat Company Limited"
   s.author       = "Siam Piwat Company Limited"
-  s.ios.deployment_target = "12.0"
+  s.ios.deployment_target = "10.0"
   s.swift_version = "5.3"
   s.source       = { :git => "https://github.com/developer-smartsoftasia/IndoorMapSDK.git", :tag => "#{s.version}" }
   s.ios.vendored_frameworks  = "IndoorMap.framework"
