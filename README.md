@@ -1,4 +1,4 @@
-# SiamPiwatIndoorMapDemo
+# Siam Piwat MappedIn Indoor Map iOS SDK
 
 # Add Pod
 
