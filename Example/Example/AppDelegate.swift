@@ -11,7 +11,7 @@ import IndoorMap
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var window: UIWindow?
     override init() {
          super.init()
          SPWIndoorMapSDKManager.shared.initialSDK(appDelegate: AppDelegate.self)

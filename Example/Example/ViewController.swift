@@ -9,11 +9,9 @@ import UIKit
 import IndoorMap
 import RxSwift
 import RxCocoa
-import MBProgressHUD
 
 class ViewController: UIViewController {
     private let bag = DisposeBag()
-    private var loading:MBProgressHUD?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,21 +59,14 @@ class ViewController: UIViewController {
     
     func showLoading() {
         DispatchQueue.main.async {
-            if let loading = self.loading{
-                loading.show(animated: true)
-            }
-            self.loading = MBProgressHUD.showAdded(to: self.view, animated: true)
-            self.loading!.contentColor = UIColor.black
-            self.loading!.bezelView.color = .white
-            self.loading!.mode = .indeterminate
+            self.view.makeToastActivity(.center)
         }
     }
     
     func hideLoading(){
         DispatchQueue.main.async {
-            if let loading = self.loading {
-                loading.hide(animated: true)
-            }
+            self.view.hideToastActivity()
+            self.view.hideAllToasts()
         }
     }
 }
