@@ -1,0 +1,756 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.28.1 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Mappedin
+import CoreLocation
+import Darwin
+import Foundation
+import GLKit
+@_exported import Mappedin
+import Metal
+import MetalKit
+import SceneKit
+import Swift
+import UIKit
+import Darwin.C.stdatomic
+public class Polygon : Navigatable, Focusable, Deserializable {
+  public var defaultColor: UIKit.UIColor {
+    get
+  }
+  weak public var venue: Venue? {
+    get
+    set
+  }
+  public var map: Map {
+    get
+  }
+  public var locations: [Location] {
+    get
+  }
+  public var entrances: [Coordinate] {
+    get
+  }
+  public var navigatableCoordinates: [Coordinate] {
+    get
+  }
+  public var geometryHeight: Swift.Float {
+    get
+  }
+  public var focusPoints: FocusPoints {
+    get
+  }
+  required public init(from buffer: inout BinaryDecoder) throws
+  public func link(with venue: Venue)
+  @objc deinit
+}
+extension Polygon : Swift.Equatable {
+  public static func == (lhs: Polygon, rhs: Polygon) -> Swift.Bool
+}
+extension Polygon : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public typealias Radians = Swift.Float
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MapView : UIKit.UIView {
+  @objc override public static var requiresConstraintBasedLayout: Swift.Bool {
+    @objc get
+  }
+  public var delegate: MapViewDelegate?
+  public var activeMap: Map? {
+    get
+    set(map)
+  }
+  public var storeLabelsEnable: Swift.Bool {
+    get
+    set(value)
+  }
+  public var storeLabelsDefaultFont: UIKit.UIFontDescriptor {
+    get
+    set(value)
+  }
+  public var storeLablesDefaultColor: UIKit.UIColor {
+    get
+    set(value)
+  }
+  public var cameraBounds: CameraBounds
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic public func layoutSubviews()
+  public func add(_ element: Element)
+  public func remove(_ element: Element)
+  public func setBackgroundColor(color: UIKit.UIColor)
+  public func setColor(of polygon: Polygon, to color: UIKit.UIColor, over animationInterval: Foundation.TimeInterval)
+  public func setHeight(of polygon: Polygon, to height: Swift.Float, over animationInterval: Foundation.TimeInterval)
+  public func setStoreLabelColor(of polygon: Polygon, to: UIKit.UIColor)
+  public func resetStoreLabelColor(of polygon: Polygon)
+  public func setMap(_ map: Map)
+  @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override dynamic public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override dynamic public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  public func polygonsInView() -> Swift.Set<Polygon>
+  public func locationsInView() -> Swift.Set<Location>
+  public func isInView(polygon: Polygon) -> Swift.Bool
+  public func isInView(location: Location) -> Swift.Bool
+  @objc deinit
+}
+final public class TextOverlay : ImageOverlay {
+  public init<PositionType>(position: PositionType, label: UIKit.UILabel, size: CoreGraphics.CGSize? = nil, anchorPoint: AnchorPoint = .center, minimumTouchSize: CoreGraphics.CGSize? = nil) where PositionType : Position
+  @objc deinit
+  override public init<PositionType>(position: PositionType, image: UIKit.UIImage, size: CoreGraphics.CGSize? = super, anchorPoint: AnchorPoint = super, minimumTouchSize: CoreGraphics.CGSize? = super) where PositionType : Position
+}
+extension MapView {
+  public var cameraHeading: Radians {
+    get
+  }
+  public var cameraTilt: Radians {
+    get
+  }
+  public func frame(_ focusable: Focusable, padding: Swift.Float = 0, heading: Radians, tilt: Radians, over animationInterval: Foundation.TimeInterval, minimumSize: Swift.Float = 25)
+  public func frame(_ focusable: [Focusable], padding: Swift.Float = 0, heading: Radians, tilt: Radians, over animationInterval: Foundation.TimeInterval, minimumSize: Swift.Float = 25)
+}
+public struct CameraBounds {
+  public var center: Vector2?
+  public var radius: Swift.Float?
+  public var maxHeight: Swift.Float
+  public var minHeight: Swift.Float
+}
+@_hasMissingDesignatedInitializers public class ImageOverlay : Element {
+  public var vector: Vector3 {
+    get
+  }
+  public var map: Map? {
+    get
+  }
+  public var coordinate: Coordinate? {
+    get
+  }
+  public init<PositionType>(position: PositionType, image: UIKit.UIImage, size: CoreGraphics.CGSize? = nil, anchorPoint: AnchorPoint = .center, minimumTouchSize: CoreGraphics.CGSize? = nil) where PositionType : Position
+  @objc deinit
+  public func set(position: Vector3, over animationInterval: Foundation.TimeInterval = 0)
+  public func set(position: Coordinate, over animationInterval: Foundation.TimeInterval = 0)
+}
+public protocol Position {
+  var vector: Vector3 { get }
+}
+extension Vector3 : Position {
+  public var vector: Vector3 {
+    get
+  }
+}
+extension Coordinate : Position {
+}
+public protocol Service {
+  associatedtype VenueType : Venue
+  var apiKey: Swift.String { get }
+  var apiSecret: Swift.String { get }
+  var dataKey: Swift.String { get }
+  var searchUser: Swift.String { get }
+  var searchKey: Swift.String { get }
+  init()
+}
+extension Service {
+  public var searchUser: Swift.String {
+    get
+  }
+  public var searchKey: Swift.String {
+    get
+  }
+}
+extension Service {
+  public init(_ appDelegateType: UIKit.UIApplicationDelegate.Type)
+  public func getVenues() -> APIRequest<[VenueListing]>
+  public func getVenue(_ venueListing: VenueListing, languageCode: Swift.String? = nil) -> APIRequest<Self.VenueType>
+}
+public protocol MapViewDelegate : AnyObject {
+  func tappedPolygons(polygons: [Polygon])
+  func tapped(_ mapView: MapView, polygon: Polygon) -> Swift.Bool
+  func tapped(_ mapView: MapView, element: Element) -> Swift.Bool
+  func tapped(_ mapView: MapView, clCoordinate: CoreLocation.CLLocationCoordinate2D)
+  func manipulatedCamera()
+}
+extension MapViewDelegate {
+  public func tappedPolygons(polygons: [Polygon])
+  public func tapped(_ mapView: MapView, polygon: Polygon) -> Swift.Bool
+  public func tapped(_ mapView: MapView, element: Element) -> Swift.Bool
+  public func tapped(_ mapView: MapView, clCoordinate: CoreLocation.CLLocationCoordinate2D)
+  public func manipulatedCamera()
+}
+public struct Vector2 : Deserializable {
+  public let x: Swift.Float
+  public let y: Swift.Float
+  public init()
+  public init(_ x: Swift.Float, _ y: Swift.Float)
+  public init(x: Swift.Float, y: Swift.Float)
+  public init(from buffer: inout BinaryDecoder) throws
+  public var lengthSquared: Swift.Float {
+    get
+  }
+  public var length: Swift.Float {
+    get
+  }
+  public var normalized: Vector2 {
+    get
+  }
+  public func angle() -> Swift.Float
+  public func angle(to: Vector2) -> Swift.Float
+}
+public func + (lhs: Vector2, rhs: Vector2) -> Vector2
+public func - (lhs: Vector2, rhs: Vector2) -> Vector2
+public func * (vector: Vector2, multiplier: Swift.Float) -> Vector2
+public func == (lhs: Vector2, rhs: Vector2) -> Swift.Bool
+@_hasMissingDesignatedInitializers open class Location : Deserializable {
+  final public let type: Swift.String
+  final public let name: Swift.String
+  public var polygons: Swift.AnySequence<Polygon> {
+    get
+  }
+  public var coordinates: Swift.AnySequence<Coordinate> {
+    get
+  }
+  public var categories: Swift.AnySequence<Category> {
+    get
+  }
+  weak public var venue: Venue? {
+    get
+    set
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+  required public init(from buffer: inout BinaryDecoder) throws
+  open func link(with venue: Venue)
+  @objc deinit
+}
+extension Location : Navigatable {
+  public var navigatableCoordinates: [Coordinate] {
+    get
+  }
+}
+extension Location : Swift.Equatable {
+  public static func == (lhs: Location, rhs: Location) -> Swift.Bool
+}
+extension Location : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct PhoneNumber : Deserializable {
+  public let number: Swift.String
+  public let ext: Swift.String
+  public init(from buffer: inout BinaryDecoder) throws
+}
+public protocol Deserializable {
+  init(from buffer: inout BinaryDecoder) throws
+}
+extension Deserializable {
+  public init(from buffer: inout BinaryDecoder) throws
+}
+extension UInt8 : Deserializable {
+}
+extension UInt16 : Deserializable {
+}
+extension UInt32 : Deserializable {
+}
+extension UInt64 : Deserializable {
+}
+extension Int8 : Deserializable {
+}
+extension Int16 : Deserializable {
+}
+extension Int32 : Deserializable {
+}
+extension Int64 : Deserializable {
+}
+extension Float : Deserializable {
+}
+extension Double : Deserializable {
+}
+extension Bool : Deserializable {
+  public init(from buffer: inout BinaryDecoder) throws
+}
+extension String : Deserializable {
+  public init(from buffer: inout BinaryDecoder) throws
+}
+public enum DeserializableError : Swift.Error {
+  case outOfSpace
+  case utf8DecodingError
+  public static func == (a: DeserializableError, b: DeserializableError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@_hasMissingDesignatedInitializers final public class Path : Element, Focusable {
+  final public var width: Swift.Float {
+    get
+  }
+  final public var height: Swift.Float {
+    get
+  }
+  final public var color: UIKit.UIColor {
+    get
+  }
+  final public var pulseColor: UIKit.UIColor {
+    get
+  }
+  final public var pulseLimit: Swift.Optional<Swift.Int> {
+    get
+  }
+  final public var pulseEnabled: Swift.Bool {
+    get
+  }
+  final public var pulseTime: Swift.Float {
+    get
+  }
+  final public var focusPoints: FocusPoints {
+    get
+  }
+  public init(points: [Coordinate], width: Swift.Float, height: Swift.Float, color: UIKit.UIColor, pulseEnabled: Swift.Bool = false, pulseColor: UIKit.UIColor = UIColor.white, pulseLimit: Swift.Optional<Swift.Int> = 10, pulseTime: Swift.Float = 2.0)
+  @objc deinit
+}
+public struct NavigationGraph {
+}
+public protocol Search {
+  var delegate: SearchDelegate? { get set }
+  func suggest(query: Swift.String, timeout: Foundation.TimeInterval)
+  func search(query: Swift.String, page: Swift.Int, timeout: Foundation.TimeInterval)
+}
+public enum SearchResultType {
+  case location(Location)
+}
+public struct SearchResult {
+  public let value: SearchResultType
+}
+public struct SearchPagination {
+  public let total: Swift.Int
+  public let page: Swift.Int
+  public let pageSize: Swift.Int
+}
+public protocol SearchDelegate {
+  func search(query: Swift.String, suggestions: [Swift.String])
+  func search(query: Swift.String, pagination: SearchPagination, results: [SearchResult])
+  func search(error: SearchError)
+}
+public enum SearchError {
+  case missingCredentials
+  case accessDenied
+  case decodingError
+  case unknownError(Swift.Error)
+}
+@_hasMissingDesignatedInitializers final public class Cylinder : Element, Focusable {
+  final public var diameter: Swift.Float {
+    get
+  }
+  final public var height: Swift.Float {
+    get
+  }
+  final public var color: UIKit.UIColor {
+    get
+  }
+  final public var focusPoints: FocusPoints {
+    get
+  }
+  final public var vector: Vector3 {
+    get
+  }
+  final public var map: Map? {
+    get
+  }
+  final public var coordinate: Coordinate? {
+    get
+  }
+  public init<PositionType>(position: PositionType, diameter: Swift.Float, height: Swift.Float, color: UIKit.UIColor) where PositionType : Position
+  final public func set(diameter: Swift.Float? = nil, height: Swift.Float? = nil, color: UIKit.UIColor? = nil, over animationInterval: Foundation.TimeInterval)
+  final public func set(position: Vector3, diameter: Swift.Float? = nil, height: Swift.Float? = nil, color: UIKit.UIColor? = nil, over animationInterval: Foundation.TimeInterval)
+  final public func set(position: Coordinate, diameter: Swift.Float? = nil, height: Swift.Float? = nil, color: UIKit.UIColor? = nil, over animationInterval: Foundation.TimeInterval)
+  @available(*, deprecated, message: "Functionally equivalent to the `Cylinder.set` function, and does not\nconform to the Apple's standard named conventions.")
+  final public func setPosition(to position: Vector3, over animationInterval: Foundation.TimeInterval)
+  @available(*, deprecated, message: "Functionally equivalent to the `Cylinder.set` function, and does not\nconform to the Apple's standard named conventions.")
+  final public func setPosition(to position: Coordinate, over animationInterval: Foundation.TimeInterval)
+  @available(*, deprecated, message: "Functionally equivalent to the `Cylinder.set` function, and does not\nconform to the Apple's standard named conventions.")
+  final public func setDiameter(to diameter: Swift.Float, over animationInterval: Foundation.TimeInterval)
+  @available(*, deprecated, message: "Functionally equivalent to the `Cylinder.set` function, and does not\nconform to the Apple's standard named conventions.")
+  final public func setHeight(to height: Swift.Float, over animationInterval: Foundation.TimeInterval)
+  @available(*, deprecated, message: "Functionally equivalent to the `Cylinder.set` function, and does not\nconform to the Apple's standard named conventions.")
+  final public func setColor(to color: UIKit.UIColor, over animationInterval: Foundation.TimeInterval)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Connection : Location {
+  final public let accessible: Swift.Bool
+  required public init(from buffer: inout BinaryDecoder) throws
+  @objc deinit
+}
+public protocol MappedinSearch {
+  var delegate: MappedinSearchDelegate? { get set }
+  func search(query: Swift.String)
+}
+public struct MappedinSearchLocation {
+}
+public struct MappedinSearchCategory {
+}
+public enum MappedinSearchResultType {
+  case location(Location)
+  case category(Category)
+}
+public struct MappedinSearchResult {
+  public let value: MappedinSearchResultType
+}
+public protocol MappedinSearchDelegate {
+  func search(query: Swift.String, results: [MappedinSearchResult])
+  func search(error: MappedinSearchError)
+}
+public enum MappedinSearchError {
+  case missingCredentials
+  case accessDenied
+  case decodingError
+  case unknownError(Swift.Error)
+}
+public struct ImageSet : Deserializable {
+  public init(from buffer: inout BinaryDecoder) throws
+  public subscript(size: Swift.Int) -> Foundation.URL {
+    get
+  }
+}
+public struct Analytics {
+  public static func selectedLocation(_ location: Location)
+  public static func selectedCategory(_ category: Category)
+  public static func startedWayfindTo(_ location: Location) -> Analytics.Wayfind
+  @_hasMissingDesignatedInitializers public class Wayfind {
+    public func successful()
+    @objc deinit
+  }
+}
+public enum HttpError : Swift.Error {
+  case requestError(Swift.Error)
+  case missingData
+  case requestTimeout
+  case invalidJSON(Swift.Error)
+  case invalidJSONSchemea
+  case httpErrorCode(Swift.Int)
+  case deserializableError(DeserializableError)
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Map : Focusable, Deserializable {
+  final public let id: Swift.String
+  final public let name: Swift.String
+  final public let shortName: Swift.String
+  final public let floor: Swift.Int
+  final public let heading: Swift.Float
+  weak public var venue: Venue? {
+    get
+    set
+  }
+  public var polygons: [Polygon] {
+    get
+  }
+  public var focusPoints: FocusPoints {
+    get
+  }
+  required public init(from buffer: inout BinaryDecoder) throws
+  @objc deinit
+}
+extension Map : Swift.Equatable {
+  public static func == (lhs: Map, rhs: Map) -> Swift.Bool
+}
+public struct SrcDst : Swift.Hashable {
+  public static func == (lhs: SrcDst, rhs: SrcDst) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension NavigationGraph {
+  public func buildNetwork(locations: [Coordinate]) -> [SrcDst : Swift.Float32]
+}
+@_hasMissingDesignatedInitializers public class Element {
+  @objc deinit
+}
+extension Element : Swift.Equatable {
+  public static func == (lhs: Element, rhs: Element) -> Swift.Bool
+}
+extension Element : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol PathSolverDelegate : AnyObject {
+  func pathSolver(solver: PathSolver, solution: [Polygon])
+  func pathSolver(solver: PathSolver, bestSolution: [Polygon])
+  func pathSolver(solver: PathSolver, error: PathSolverError)
+}
+public enum PathSolverError : Swift.Error {
+  case UnroutablePolygons([Polygon])
+}
+public class PathSolver {
+  final public let venue: Venue
+  weak public var delegate: PathSolverDelegate?
+  public init(venue: Venue)
+  public func start(origin: Polygon, toVisit: [Polygon], willExpire: Swift.Set<Polygon> = Set(), expireTime: Swift.Float = 10 * 60)
+  public func stop()
+  @objc deinit
+}
+public struct Directions {
+  public let path: [Coordinate]
+  public let instructions: [Directions.Instruction]
+  public let distance: Swift.Float
+}
+extension Directions {
+  public struct Instruction {
+    public typealias Action = DirectionsInstructionAction
+    public struct Departure : Directions.Instruction.Action {
+    }
+    public struct Arrival : Directions.Instruction.Action {
+    }
+    public struct Turn : Directions.Instruction.Action {
+      public enum Bearing {
+        case left
+        case slightLeft
+        case straight
+        case slightRight
+        case right
+        public static func == (a: Directions.Instruction.Turn.Bearing, b: Directions.Instruction.Turn.Bearing) -> Swift.Bool
+        public var hashValue: Swift.Int {
+          get
+        }
+        public func hash(into hasher: inout Swift.Hasher)
+      }
+      public let relativeBearing: Directions.Instruction.Turn.Bearing
+    }
+    public struct TakeConnection : Directions.Instruction.Action {
+      public let fromMap: Map
+      public let toMap: Map
+    }
+    public struct ExitConnection : Directions.Instruction.Action {
+      public let fromMap: Map
+      public let toMap: Map
+    }
+    public let coordinate: Coordinate
+    public let action: Directions.Instruction.Action
+    public let atLocation: Location?
+    public var description: Swift.String {
+      get
+    }
+  }
+}
+public protocol DirectionsInstructionAction {
+}
+public struct Vector3 : Deserializable {
+  public let vector2: Vector2
+  public var x: Swift.Float {
+    get
+  }
+  public var y: Swift.Float {
+    get
+  }
+  public let z: Swift.Float
+  public init(_ x: Swift.Float, _ y: Swift.Float, _ z: Swift.Float)
+  public init(x: Swift.Float, y: Swift.Float, z: Swift.Float)
+  public init(_ v: SceneKit.SCNVector3)
+  public init(from buffer: inout BinaryDecoder) throws
+}
+extension Vector3 : Focusable {
+  public var focusPoints: FocusPoints {
+    get
+  }
+}
+extension Vector3 : Swift.Equatable {
+  public static func == (lhs: Vector3, rhs: Vector3) -> Swift.Bool
+}
+public class Coordinate : Navigatable, Focusable, Deserializable {
+  public var vector2: Vector2 {
+    get
+  }
+  public var x: Swift.Float {
+    get
+  }
+  public var y: Swift.Float {
+    get
+  }
+  public var z: Swift.Float {
+    get
+  }
+  public var vector: Vector3 {
+    get
+  }
+  weak public var venue: Venue? {
+    get
+    set
+  }
+  public var map: Map {
+    get
+  }
+  public var navigatableCoordinates: [Coordinate] {
+    get
+  }
+  public var focusPoints: FocusPoints {
+    get
+  }
+  required public init(from buffer: inout BinaryDecoder) throws
+  public init(location: CoreLocation.CLLocationCoordinate2D, map: Map)
+  public init(vector: Vector3, map: Map)
+  public func toCLLocation() -> CoreLocation.CLLocationCoordinate2D
+  public func meters(from coordinate: Coordinate) -> Swift.Float
+  public func meters(from polygon: Polygon) -> Swift.Float
+  public func meters(from path: [Coordinate]) -> Swift.Float
+  public func closestPointOnPathSegment(from p1: Vector2, to p2: Vector2) -> Coordinate
+  public func isInside(_ polygon: Polygon) -> Swift.Bool
+  @objc deinit
+}
+extension Coordinate : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public func == (lhs: Coordinate, rhs: Coordinate) -> Swift.Bool
+public struct VenueListing {
+  public let slug: Swift.String
+  public let name: Swift.String
+  public let address: Swift.String
+  public let city: Swift.String
+  public let state: Swift.String
+  public let countryCode: Swift.String
+  public let postal: Swift.String
+  public let defaultLanguage: Swift.String
+  public let languageCodes: [Swift.String]
+}
+@_hasMissingDesignatedInitializers open class Venue {
+  final public let slug: Swift.String
+  final public let name: Swift.String
+  final public let address: Swift.String
+  final public let city: Swift.String
+  final public let state: Swift.String
+  final public let countryCode: Swift.String
+  final public let postal: Swift.String
+  final public let defaultLanguage: Swift.String
+  final public let languageCodes: [Swift.String]
+  public var maps: [Map]
+  public var categories: [Category]
+  public var locations: [Location]
+  public var connections: [Connection]
+  public var search: Search!
+  public var mappedinSearch: MappedinSearch!
+  required public init(inflate venueListing: VenueListing, with buffer: inout BinaryDecoder) throws
+  @objc deinit
+}
+extension Venue : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  open var hashValue: Swift.Int {
+    get
+  }
+}
+extension Venue : Swift.Equatable {
+  public static func == (lhs: Venue, rhs: Venue) -> Swift.Bool
+}
+public class Category : Deserializable {
+  final public let name: Swift.String
+  final public let sortOrder: Swift.Int16
+  final public let color: UIKit.UIColor
+  public var icon: ImageSet?
+  public var picture: ImageSet?
+  weak public var venue: Venue? {
+    get
+    set
+  }
+  public var locations: [Location] {
+    get
+  }
+  public var parents: [Category] {
+    get
+  }
+  public var children: [Category] {
+    get
+  }
+  required public init(from buffer: inout BinaryDecoder) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class Prism : Element, Focusable {
+  final public var heading: Radians {
+    get
+  }
+  final public var height: Swift.Float {
+    get
+  }
+  final public var color: UIKit.UIColor {
+    get
+  }
+  final public var focusPoints: FocusPoints {
+    get
+  }
+  final public var vector: Vector3 {
+    get
+  }
+  final public var map: Map? {
+    get
+  }
+  final public var coordinate: Coordinate? {
+    get
+  }
+  public init<PositionType>(position: PositionType, heading: Radians = 0, points: [Vector2], height: Swift.Float, color: UIKit.UIColor) where PositionType : Position
+  final public func set(heading: Radians? = nil, height: Swift.Float? = nil, color: UIKit.UIColor? = nil, over animationInterval: Foundation.TimeInterval)
+  final public func set(position: Vector3, heading: Radians? = nil, height: Swift.Float? = nil, color: UIKit.UIColor? = nil, over animationInterval: Foundation.TimeInterval)
+  final public func set(position: Coordinate, heading: Radians? = nil, height: Swift.Float? = nil, color: UIKit.UIColor? = nil, over animationInterval: Foundation.TimeInterval)
+  @available(*, deprecated, message: "Functionally equivalent to the `Prism.set` function, and does not\nconform to the Apple's standard named conventions.")
+  final public func setPosition(to position: Vector3, over animationInterval: Foundation.TimeInterval)
+  @available(*, deprecated, message: "Functionally equivalent to the `Prism.set` function, and does not\nconform to the Apple's standard named conventions.")
+  final public func setPosition(to position: Coordinate, over animationInterval: Foundation.TimeInterval)
+  @available(*, deprecated, message: "Functionally equivalent to the `Prism.set` function, and does not\nconform to the Apple's standard named conventions.")
+  final public func setHeading(to heading: Radians, over animationInterval: Foundation.TimeInterval)
+  @available(*, deprecated, message: "Functionally equivalent to the `Prism.set` function, and does not\nconform to the Apple's standard named conventions.")
+  final public func setHeight(to height: Swift.Float, over animationInterval: Foundation.TimeInterval)
+  @available(*, deprecated, message: "Functionally equivalent to the `Prism.set` function, and does not\nconform to the Apple's standard named conventions.")
+  final public func setColor(to color: UIKit.UIColor, over animationInterval: Foundation.TimeInterval)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class APIRequest<DataType> {
+  @discardableResult
+  public func onComplete(_ callback: @escaping (DataType) -> Swift.Void) -> Self
+  @discardableResult
+  public func onError(_ callback: @escaping (APIRequest<DataType>.RequestError) -> Swift.Void) -> Self
+  public func synchronousFetch() throws -> DataType
+  public typealias RequestError = HttpError
+  @objc deinit
+}
+public enum AnchorPoint {
+  case center
+  case top
+  case topRight
+  case topLeft
+  case left
+  case right
+  case bottom
+  case bottomLeft
+  case bottomRight
+  case custom(x: Swift.Float, y: Swift.Float)
+  public func toTextureOffset() -> (x: Swift.Float, y: Swift.Float)
+}
+public struct BinaryDecoder {
+  public mutating func pull<DeserializableType>(_ type: DeserializableType.Type) throws -> DeserializableType where DeserializableType : Deserializable
+  public mutating func pull<DeserializableType>(_ type: [DeserializableType].Type) throws -> [DeserializableType] where DeserializableType : Deserializable
+  public mutating func pull<DeserializableType>(_ type: DeserializableType?.Type) throws -> DeserializableType? where DeserializableType : Deserializable
+  public mutating func pullValue<DeserializableType>() throws -> DeserializableType where DeserializableType : Deserializable
+  public mutating func pullValue<DeserializableType>() throws -> [DeserializableType] where DeserializableType : Deserializable
+}
+public protocol Navigatable {
+  var navigatableCoordinates: [Coordinate] { get }
+}
+extension Navigatable {
+  public var isNavigatable: Swift.Bool {
+    get
+  }
+}
+extension Navigatable {
+  public func directions<VenueNavigatable>(to destination: VenueNavigatable, accessible: Swift.Bool = false) -> Directions? where VenueNavigatable : Navigatable
+  public func directions<VenueNavigatable>(from origin: VenueNavigatable, accessible: Swift.Bool = false) -> Directions? where VenueNavigatable : Navigatable
+}
+public protocol Focusable {
+  var focusPoints: FocusPoints { get }
+}
+public struct FocusPoints {
+}
+extension DeserializableError : Swift.Equatable {}
+extension DeserializableError : Swift.Hashable {}
+extension Directions.Instruction.Turn.Bearing : Swift.Equatable {}
+extension Directions.Instruction.Turn.Bearing : Swift.Hashable {}
