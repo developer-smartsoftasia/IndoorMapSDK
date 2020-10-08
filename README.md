@@ -3,7 +3,7 @@
 # Add Pod
 
 ```
-pod 'SiamPiwatIndoorMapSDK', '0.6.0'
+pod 'SiamPiwatIndoorMapSDK', '0.7.0'
 ```
 
 ```
@@ -59,6 +59,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ```
      SPWIndoorMapSDKManager.shared.setSimulateNavigation(simulateNavigation: true)
+```
+
+# Set Enable Device Location
+
+```
+  SPWIndoorMapSDKManager.shared.setEnableDeviceLocation(isEnableDeviceLocation: true)
+```
+
+# Set Update User Current Position
+
+before you use this method you need to set EnableDeviceLocation by SPWIndoorMapSDKManager.shared.setEnableDeviceLocation(isEnableDeviceLocation: true)
+
+```
+ SPWIndoorMapSDKManager.shared.updateUserCurrentPosition(CLLocationCoordinate2DMake(13.746478, 100.534629))
 ```
 
 # Set AIS Store

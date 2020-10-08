@@ -9,9 +9,12 @@ import UIKit
 import IndoorMap
 import RxSwift
 import RxCocoa
+import CoreLocation
 
 class ViewController: UIViewController {
     private let bag = DisposeBag()
+    
+    var manager:CLLocationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +34,9 @@ class ViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+        self.manager.delegate = self
+        self.manager.desiredAccuracy = kCLLocationAccuracyBest
+    
         SPWIndoorMapSDKManager.shared.initialSDK(slug: .oneSiam,
                                                  shops: shops,
                                                  language: .th,
@@ -50,6 +56,11 @@ class ViewController: UIViewController {
             self.hideLoading()
             print(error.errorDescription)
         }
+        
+        SPWIndoorMapSDKManager.shared.setEnableDeviceLocation(isEnableDeviceLocation: true)
+        self.manager.startUpdatingLocation()
+        self.manager.requestAlwaysAuthorization()
+
     }
     
     func showMapView(){
@@ -69,5 +80,22 @@ class ViewController: UIViewController {
             self.view.hideAllToasts()
         }
     }
+    
 }
 
+
+extension ViewController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+        if let location = locations.last{
+            print("latitude: \(location.coordinate.latitude) longitude: \(location.coordinate.longitude)")
+            SPWIndoorMapSDKManager.shared.updateUserCurrentPosition(location.coordinate)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error){
+        print(error.localizedDescription)
+    }
+    
+    
+}
