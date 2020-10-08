@@ -60,5 +60,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We need to have access to your location while doing a ride in the background so we can have your accurate position even if you are using another app.ื</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need to have access to your location while doing a ride in the background so we can have your accurate position even if you are using another app.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need to have access to your location while doing a ride in the background so we can have your accurate position even if you are using another app.</string>
 </dict>
 </plist>
