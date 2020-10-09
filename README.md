@@ -63,6 +63,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 # Set Enable Device Location
 
+import CoreLocation and Privacy to Info.plist
+Privacy - Location Always and When In Use Usage Description, Privacy - Location Always Usage Description, Privacy - Location When In Use Usage Description whatever
+and add delegate
+
+```
+ import CoreLocation
+
+ var manager:CLLocationManager = CLLocationManager()
+ self.manager.delegate = self
+ self.manager.desiredAccuracy = kCLLocationAccuracyBest
+
+extension ViewController: CLLocationManagerDelegate {
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+        if let location = locations.last{
+            print("latitude: \(location.coordinate.latitude) longitude: \(location.coordinate.longitude)")
+            SPWIndoorMapSDKManager.shared.updateUserCurrentPosition(location.coordinate)
+        }
+    }
+
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error){
+        print(error.localizedDescription)
+    }
+
+
+}
+```
+
 ```
   SPWIndoorMapSDKManager.shared.setEnableDeviceLocation(isEnableDeviceLocation: true)
 ```
