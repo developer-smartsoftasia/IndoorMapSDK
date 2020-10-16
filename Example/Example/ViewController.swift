@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         }
         self.manager.delegate = self
         self.manager.desiredAccuracy = kCLLocationAccuracyBest
-    
+        
         SPWIndoorMapSDKManager.shared.initialSDK(slug: .oneSiam,
                                                  shops: shops,
                                                  language: .th,
@@ -87,10 +87,13 @@ class ViewController: UIViewController {
 extension ViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
-        if let location = locations.last{
-            print("latitude: \(location.coordinate.latitude) longitude: \(location.coordinate.longitude)")
-            SPWIndoorMapSDKManager.shared.updateUserCurrentPosition(location.coordinate)
-        }
+        let mock = [SPWAISLocation(isIndoor: true, latitude: "13.746478", longitude: "100.534629",
+                                                          builId: "4409", buildName: "Siam Paragon", floorId: "8288", floorNumber: "0"),
+                                     SPWAISLocation(isIndoor: true, latitude: "13.7465", longitude: "100.534629",
+                                                          builId: "4409", buildName: "Siam Paragon", floorId: "8290", floorNumber: "1"),
+                                     ]
+        
+        SPWIndoorMapSDKManager.shared.updateUserCurrentPosition(CLLocationCoordinate2D(latitude: 13.746478, longitude: 100.534629))
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error){
