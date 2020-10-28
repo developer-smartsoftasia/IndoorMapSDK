@@ -46,7 +46,6 @@ class ViewController: UIViewController {
             self.hideLoading()
             SPWIndoorMapSDKManager.shared.resetOrginAndDestination()
             
-            
             if let store = SPWIndoorMapSDKManager.shared.store("5bd9248dabc75d7da0f2c58e"), let name = store.nameLocalized(){
                 print("\(name)")
                 SPWIndoorMapSDKManager.shared.setDestination(store)
