@@ -144,14 +144,10 @@ install_xcframework() {
     mkdir -p "$destination"
   fi
 
-  if [[ "$package_type" == "library" ]]; then
-    # Libraries can contain headers, module maps, and a binary, so we'll copy everything in the folder over
-    copy_dir "$source/" "$destination"
-  elif [[ "$package_type" == "framework" ]]; then
-    copy_dir "$source" "$destination"
-  fi
+  copy_dir "$source/" "$destination"
+
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/../../Mappedin.xcframework" "Mappedin" "framework" "ios-arm64_i386_x86_64-simulator/Mappedin.framework" "ios-arm64_armv7/Mappedin.framework"
+install_xcframework "${PODS_ROOT}/../../Mappedin.xcframework" "Mappedin" "framework" "ios-arm64_i386_x86_64-simulator" "ios-arm64_armv7"
 
