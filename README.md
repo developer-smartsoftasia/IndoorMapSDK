@@ -3,7 +3,7 @@
 # Add Pod
 
 ```
-pod 'SiamPiwatIndoorMapSDK', '0.8.0'
+pod 'SiamPiwatIndoorMapSDK', '0.8.1'
 ```
 
 ```
@@ -79,7 +79,8 @@ extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
         if let location = locations.last{
             print("latitude: \(location.coordinate.latitude) longitude: \(location.coordinate.longitude)")
-            SPWIndoorMapSDKManager.shared.updateUserCurrentPosition(location.coordinate)
+            SPWIndoorMapSDKManager.shared.updateUserCurrentPosition(location)
+
         }
     }
 

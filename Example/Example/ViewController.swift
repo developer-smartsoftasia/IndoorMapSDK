@@ -92,7 +92,7 @@ extension ViewController: CLLocationManagerDelegate {
                                                           builId: "4409", buildName: "Siam Paragon", floorId: "8290", floorNumber: "1"),
                                      ]
         
-        SPWIndoorMapSDKManager.shared.updateUserCurrentPosition(CLLocationCoordinate2D(latitude: 13.746478, longitude: 100.534629))
+        SPWIndoorMapSDKManager.shared.updateUserCurrentPosition(CLLocation(latitude: 13.746478, longitude: 100.534629))
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error){
