@@ -3,7 +3,7 @@
 # Add Pod
 
 ```
-pod 'SiamPiwatIndoorMapSDK', '0.9.1'
+pod 'SiamPiwatIndoorMapSDK', '0.9.2'
 ```
 
 ```
