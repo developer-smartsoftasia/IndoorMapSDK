@@ -15,7 +15,7 @@ PODS:
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
-  - SiamPiwatIndoorMapSDK (0.9.4):
+  - SiamPiwatIndoorMapSDK (0.9.5):
     - Action (= 4.1.0)
     - Device (= 3.2.1)
     - Kingfisher (= 5.15.1)
@@ -51,9 +51,9 @@ SPEC CHECKSUMS:
   RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
-  SiamPiwatIndoorMapSDK: d3585b51c9543296b3d662408d24a5b961d94967
+  SiamPiwatIndoorMapSDK: 292801f199b3d3366177383ff3515c7db3f55e82
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
 PODFILE CHECKSUM: b6d497fcfb759b11dfd8ddd82f74283a13300934
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
