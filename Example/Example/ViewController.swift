@@ -37,10 +37,7 @@ class ViewController: UIViewController {
         self.manager.delegate = self
         self.manager.desiredAccuracy = kCLLocationAccuracyBest
         
-        SPWIndoorMapSDKManager.shared.initialSDK(slug: .oneSiam,
-                                                 shops: shops,
-                                                 language: .th,
-                                                 appDelegate: AppDelegate.self, isDebug: false)
+        SPWIndoorMapSDKManager.shared.setAISShops(shops)
         self.showLoading()
         SPWIndoorMapSDKManager.shared.getVenues(completion: {
             self.hideLoading()
