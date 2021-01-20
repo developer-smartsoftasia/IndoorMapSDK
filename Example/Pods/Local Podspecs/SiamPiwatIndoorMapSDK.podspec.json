@@ -1,6 +1,6 @@
 {
   "name": "SiamPiwatIndoorMapSDK",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "summary": "SiamPiwatIndoorMapSDK",
   "homepage": "https://github.com/developer-smartsoftasia/IndoorMapSDK.git",
   "license": "Siam Piwat Company Limited",
@@ -11,7 +11,7 @@
   "swift_versions": "5.3",
   "source": {
     "git": "https://github.com/developer-smartsoftasia/IndoorMapSDK.git",
-    "tag": "0.9.5"
+    "tag": "0.9.6"
   },
   "vendored_frameworks": [
     "IndoorMap.framework",
